@@ -20,6 +20,7 @@ Convert and play videos or GIFs as ASCII art in your terminal with proper frame 
 
 1. Clone or download this repository
 2. Install dependencies:
+
 ```bash
 pip install opencv-python pillow
 ```
@@ -29,16 +30,19 @@ pip install opencv-python pillow
 ## Usage
 
 1. Update the video filename in `main.py`:
+
 ```python
 video = cv2.VideoCapture("your_video.gif")  # or .mp4, .avi, etc.
 ```
 
 2. Run the script:
+
 ```bash
 python main.py
 ```
 
 The video will display as ASCII art in your terminal with the following character mapping based on brightness:
+
 - `@` - Very bright
 - `#` - Bright
 - `%` - Medium-bright
